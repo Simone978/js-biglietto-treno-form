@@ -1,6 +1,6 @@
 
 
-var genera= document.getElementById("genera");
+var genera = document.getElementById("genera");
 
 genera.addEventListener('click',
   function(){
@@ -14,7 +14,7 @@ genera.addEventListener('click',
   var fascia = document.getElementById('fascia').value;
 
   var prezzoBase = 0.21;
-  var prezzoTratta= prezzoBase * km;
+  var prezzoTratta = prezzoBase * km;
   var euro = " €";
 
 
@@ -23,9 +23,11 @@ genera.addEventListener('click',
   if (fascia == 'minorenne') {
     prezzoTratta -= prezzoTratta * (20 / 100);
     document.getElementById('costo_biglietto').innerHTML = "Il tuo biglietto costa " + prezzoTratta.toFixed(2) + euro;
+    document.getElementById('offerta').innerHTML = "minorenne";
   } else if (fascia == 'silvercard') {
     prezzoTratta -= prezzoTratta * (40 / 100);
     document.getElementById('costo_biglietto').innerHTML = "Il tuo biglietto costa " + prezzoTratta.toFixed(2) + euro;
+    document.getElementById('offerta').innerHTML = "silvercard";
   }
 
   document.getElementById('costo_biglietto').innerHTML = "Il tuo biglietto costa " + prezzoTratta + euro;
