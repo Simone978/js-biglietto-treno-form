@@ -30,6 +30,13 @@ genera.addEventListener('click',
     document.getElementById('offerta').innerHTML = "silvercard";
   }
 
-  document.getElementById('costo_biglietto').innerHTML = "Il tuo biglietto costa " + prezzoTratta + euro;
-  }
+  document.getElementById('costo_biglietto').innerHTML = "Il tuo biglietto costa " + prezzoTratta.toFixed(2) + euro;
+  document.getElementById('offerta').innerHTML = "Tariffa standard";
+
+  var carrozza = Math.floor(Math.random() * 10) + 1;
+  console.log(carrozza);
+  document.getElementById('carrozza').innerHTML = carrozza;
+
+  var 
+}
 );
