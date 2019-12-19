@@ -48,3 +48,10 @@ genera.addEventListener('click',
   ticket.classList.remove('hidden');
 }
 );
+
+document.getElementById('annulla');
+annulla.addEventListener('click',
+function(){
+  ticket.classList.remove('show');
+  ticket.classList.add('hidden');
+})

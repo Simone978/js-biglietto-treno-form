@@ -90,9 +90,10 @@ button {
 
 .hidden {
   opacity: 0;
-  transition: 5s;
+  transition: 3s;
 }
 .show {
+  transition: 3s;
   opacity: 1;
 }
 
