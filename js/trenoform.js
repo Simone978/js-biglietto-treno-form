@@ -49,9 +49,21 @@ genera.addEventListener('click',
 }
 );
 
+
 document.getElementById('annulla');
 annulla.addEventListener('click',
 function(){
+
+  // cancello tutti i risultati
+  document.getElementById('costo_biglietto').innerHTML = '';
+  document.getElementById('offerta').innerHTML = '';
+  document.getElementById('carrozza').innerHTML = '';
+  document.getElementById('codice').innerHTML = '';
+  document.getElementById('nome_passeggero').innerHTML = '';
+
+  // faccio scomparire il ticket cliccando su annulla
   ticket.classList.remove('show');
   ticket.classList.add('hidden');
+
+
 })
