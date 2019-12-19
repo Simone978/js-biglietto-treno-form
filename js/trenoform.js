@@ -44,6 +44,9 @@ genera.addEventListener('click',
   var ticket = document.getElementById('ticket_container');
   ticket.classList.add('show');
   ticket.classList.remove('hidden');
+  var wrapper = document.getElementById('wrapper');
+  wrapper.classList.add('height100');
+  wrapper.classList.remove('height300');
 }
 );
 
@@ -63,6 +66,9 @@ function(){
   var ticket = document.getElementById('ticket_container');
   ticket.classList.remove('show');
   ticket.classList.add('hidden');
+  var wrapper = document.getElementById('wrapper');
+  wrapper.classList.remove('height100');
+  wrapper.classList.add('height300');
 
 
 });

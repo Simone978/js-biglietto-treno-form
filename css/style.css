@@ -21,8 +21,14 @@ body {
 }
 
 /* utility */
-
-
+.height100 {
+  height: 100%;
+  transition: 3s;
+}
+.height300 {
+  height: 300px;
+  transition: 3s;
+}
 
 .wrapper {
   width: 80%;
