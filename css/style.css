@@ -31,10 +31,15 @@ body {
 }
 
 .info {
-  width: 80%;
-  margin: auto;
-  background-color: white;
   border-radius: 15px;
+}
+.ticket {
+  padding-bottom: 10px;
+}
+.info, .ticket {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
 }
 
 .row {
@@ -81,4 +86,20 @@ button {
   border-radius: 5px;
   font-size: 1.1em;
   margin: 0 10px;
+}
+
+.ticket_body {
+  display: flex;
+  margin: 0 10px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.generalita {
+  width: 25%;
+  background-color: grey;
+}
+
+table td, table th {
+  padding: 10px;
 }
