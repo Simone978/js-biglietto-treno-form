@@ -22,21 +22,29 @@ genera.addEventListener('click',
 // va applicato uno sconto del 20% per i minorenni e del 40% per gli over 65.
   if (fascia == 'minorenne') {
     prezzoTratta -= prezzoTratta * (20 / 100);
-    document.getElementById('costo_biglietto').innerHTML = "Il tuo biglietto costa " + prezzoTratta.toFixed(2) + euro;
-    document.getElementById('offerta').innerHTML = "minorenne";
+    document.getElementById('costo_biglietto').innerHTML =  prezzoTratta.toFixed(2) + euro;
+    document.getElementById('offerta').innerHTML = fascia;
   } else if (fascia == 'silvercard') {
     prezzoTratta -= prezzoTratta * (40 / 100);
-    document.getElementById('costo_biglietto').innerHTML = "Il tuo biglietto costa " + prezzoTratta.toFixed(2) + euro;
-    document.getElementById('offerta').innerHTML = "silvercard";
+    document.getElementById('costo_biglietto').innerHTML = prezzoTratta.toFixed(2) + euro;
+    document.getElementById('offerta').innerHTML = fascia;
   }
 
-  document.getElementById('costo_biglietto').innerHTML = "Il tuo biglietto costa " + prezzoTratta.toFixed(2) + euro;
-  document.getElementById('offerta').innerHTML = "Tariffa standard";
+  document.getElementById('costo_biglietto').innerHTML = prezzoTratta.toFixed(2) + euro;
+  document.getElementById('offerta').innerHTML = fascia;
 
+  // genero un numero casuale da 1 a 9 per la carrozza
   var carrozza = Math.floor(Math.random() * 10) + 1;
   console.log(carrozza);
   document.getElementById('carrozza').innerHTML = carrozza;
 
-  var 
+  // genero un numero casuale da 9000 a 10000 per il codice cp
+  var codice = Math.floor(Math.random() * (10000 - 9000) ) + 9000;
+  document.getElementById('codice').innerHTML = codice;
+
+  // faccio apparire il ticket quando clicco su genera
+  var ticket = document.getElementById('ticket');
+  ticket.classList.add('show');
+  ticket.classList.remove('hidden');
 }
 );
