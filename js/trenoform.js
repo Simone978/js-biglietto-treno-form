@@ -17,9 +17,7 @@ genera.addEventListener('click',
   var prezzoTratta = prezzoBase * km;
   var euro = " €";
 
-
-
-// va applicato uno sconto del 20% per i minorenni e del 40% per gli over 65.
+  // va applicato uno sconto del 20% per i minorenni e del 40% per gli over 65.
   if (fascia == 'minorenne') {
     prezzoTratta -= prezzoTratta * (20 / 100);
     document.getElementById('costo_biglietto').innerHTML =  prezzoTratta.toFixed(2) + euro;
@@ -43,7 +41,7 @@ genera.addEventListener('click',
   document.getElementById('codice').innerHTML = codice;
 
   // faccio apparire il ticket quando clicco su genera
-  var ticket = document.getElementById('ticket');
+  var ticket = document.getElementById('ticket_container');
   ticket.classList.add('show');
   ticket.classList.remove('hidden');
 }
@@ -62,8 +60,9 @@ function(){
   document.getElementById('nome_passeggero').innerHTML = '';
 
   // faccio scomparire il ticket cliccando su annulla
+  var ticket = document.getElementById('ticket_container');
   ticket.classList.remove('show');
   ticket.classList.add('hidden');
 
 
-})
+});

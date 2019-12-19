@@ -9,6 +9,7 @@
 /* typography */
 body {
   font-size: 16px;
+  background-color: black
 }
 
 /* formatting */
@@ -37,15 +38,15 @@ body {
   padding-bottom: 10px;
 }
 .info, .ticket {
-  width: 80%;
-  margin: 20px auto;
+  width: 90%;
+  margin: 10px auto;
   background-color: white;
 }
 
 .row {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .col {
@@ -74,7 +75,7 @@ label {
 
 .buttons {
   text-align: center;
-      padding: 20px;
+  padding: 0 20px 20px;
 }
 button {
   display: inline-block;
@@ -97,6 +98,12 @@ button {
   opacity: 1;
 }
 
+.ticket {
+  padding: 20px;
+}
+.ticket h3 {
+  padding-left: 10px;
+}
 .ticket_body {
   display: flex;
   margin: 0 10px;
@@ -107,8 +114,12 @@ button {
 .generalita {
   width: 25%;
   background-color: grey;
+  padding: 20px;
 }
 
+table {
+  font-size: 1.2em;
+}
 table td, table th {
-  padding: 10px;
+  padding: 20px;
 }
