@@ -16,9 +16,7 @@ genera.addEventListener('click',
   var prezzoBase = 0.21;
   var prezzoTratta= prezzoBase * km;
   var euro = " €";
-  var num = 5.304;
-  var n= num.toFixed(2);
-  console.log(n);
+
 
 
 // va applicato uno sconto del 20% per i minorenni e del 40% per gli over 65.
